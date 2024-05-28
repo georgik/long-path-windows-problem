@@ -1,0 +1,14 @@
+[package]
+name = "long-path-validator-manifest"
+version = "0.1.0"
+edition = "2021"
+
+build = "build.rs"
+
+[dependencies]
+
+[package.metadata.cargo-apk]
+assets = ["long_path_manifest.xml"]
+
+[package.metadata.windows]
+resource = "long_path_manifest.rc"
